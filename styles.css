@@ -1062,3 +1062,148 @@ a, a:visited, a span {
     text-decoration: underline;
 }
 
+.placeholder-image {
+    width: 1180px;
+    height: 670px;
+    background-color: #ddd;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #555;
+    text-align: center;
+}
+
+/* Meet The Team Section */
+.team-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.team-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.placeholder-image {
+    width: 1180px;
+    height: 670px;
+    background-color: #ddd;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #555;
+    text-align: center;
+}
+
+figcaption {
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Meet The Team Section */
+.team-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.team-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Employee Headshot Grid */
+.headshot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.headshot-box {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headshot-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headshot-box figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.headshot-box:hover figcaption {
+    opacity: 1;
+}
+
+.team-section {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.team-content {
+    max-width: 1180px; /* Matches the width of the big placeholder image */
+    margin: 0 auto; /* Centers the content */
+    text-align: left;
+}
+
+.team-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #666;
+    text-align: center;
+}
+
+.quote-image {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    margin: 20px auto;
+}
