@@ -54,8 +54,70 @@
             color: #2048bb;
             text-decoration: none;
             font-weight: bold;
+        } /* Dropdown Menu CSS */
+    .navg li {
+        position: relative;
+        display: inline-block;
+    }
+
+    .sublink .dropdown {
+        display: block; /* Set display block initially for animation */
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 200px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        /* Hide dropdown by default and set initial opacity and transform */
+        opacity: 0;
+        transform: translateY(-10px); /* Start 10px above */
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+
+    .sublink:hover .dropdown {
+        opacity: 1; /* Full visibility */
+        transform: translateY(0); /* Slide down to original position */
+        visibility: visible;
+    }
+
+    .dropdown li {
+        display: block;
+    }
+
+    .dropdown li a {
+        color: #333;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    .dropdown li a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .icon-down-arrow {
+        margin-left: 5px;
+    }
+</style>
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>    
+    <script>
+        AOS.init({
+            offset: 100, // Offset (distance from the viewport) to trigger animation
+            delay: 300,  // Delay for the animation
+            duration: 1000, // Duration for the animation
+            easing: 'ease-in-out', // Easing function for the animation
+        });
+    </script>
+    <script>
+        function toggleMobileNav() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
         }
-    </style>
+    </script>
 </head>
 <body>
     <div class="product-container">
