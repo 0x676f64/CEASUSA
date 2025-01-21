@@ -1106,6 +1106,28 @@ a, a:visited, a span {
     text-align: center;
 }
 
+.team-content {
+    max-width: 1200px; /* Restrict the width of the text content */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding for spacing */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Adjust text color for better contrast */
+    font-family: Arial, sans-serif; /* Ensure legible font */
+}
+
+.team-content p {
+    margin-bottom: 5px; /* Add spacing between paragraphs */
+}
+
+.team-content .quote-image {
+    display: block;
+    margin: 0 auto; /* Center the image and add spacing */
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 figcaption {
     text-transform: uppercase;
     text-align: center;
@@ -1133,6 +1155,7 @@ figcaption {
 }
 
 /* Employee Headshot Grid */
+
 .headshot-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1144,12 +1167,10 @@ figcaption {
 }
 
 .headshot-box {
-    width: 280px;
-    height: 280px;
+    width: 100%;
     position: relative;
     overflow: hidden;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1163,47 +1184,175 @@ figcaption {
 
 .headshot-box figcaption {
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Full overlay opacity */
     color: #fff;
     text-align: center;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .headshot-box:hover figcaption {
     opacity: 1;
 }
 
-.team-section {
-    text-align: center;
-    padding: 20px 20px;
+.employee-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.team-section h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.employee-position {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
-.team-content {
-    max-width: 1180px; /* Matches the width of the big placeholder image */
-    margin: 0 auto; /* Centers the content */
-    text-align: left;
+.emp_name {
+    font-size: 22px;
+    font-weight: 500;
 }
 
-.team-content p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #666;
-    text-align: center;
+.emp_pos {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7ac362;
 }
 
-.quote-image {
-    display: block;
-    max-width: 40%;
-    height: auto;
-    margin: 20px auto;
+/* Tablet-friendly styles for headshot grid */
+@media (max-width: 1024px) {
+    .headshot-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Create 3 boxes per row */
+        gap: 20px; /* Add space between boxes */
+        padding: 0 20px; /* Add padding at the edges of the grid */
+    }
+
+    .headshot-box {
+        width: 100%;
+        padding: 0; /* Add padding inside each box */
+        background: none;
+        text-align: center; /* Center the content inside each box */
+        box-sizing: border-box; /* Ensure padding doesn't overflow */
+    }
+
+    .headshot-box img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+    }
+
+    .headshot-box figcaption {
+        margin-top: 8px; /* Add spacing between the image and the caption */
+    }
+
+    .emp_name {
+        font-weight: bold;
+        display: block; /* Stack the name and position */
+    }
+
+    .emp_pos {
+        color: #7ac362; /* Adjust color for better readability */
+    }
+
+    .placeholder-image {
+        width: 100%;
+        background: none;
+    }
+}
+
+/* Tablet-friendly styles for headshot grid */
+@media (max-width: 820px) {
+    .headshot-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Create 3 boxes per row */
+        gap: 20px; /* Add space between boxes */
+        padding: 0 20px; /* Add padding at the edges of the grid */
+    }
+
+    .headshot-box {
+        width: 100%;
+        padding: 0;
+        background: none;
+        text-align: center; /* Center the content inside each box */
+        box-sizing: border-box; /* Ensure padding doesn't overflow */
+    }
+
+    .headshot-box img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+    }
+
+    .headshot-box figcaption {
+        margin-top: 8px; /* Add spacing between the image and the caption */
+    }
+
+    .emp_name {
+        font-weight: bold;
+        display: block; /* Stack the name and position */
+    }
+
+    .emp_pos {
+        color: #7ac362; /* Adjust color for better readability */
+    }
+
+    .placeholder-image {
+        width: 100%;
+        background: none;
+    }
+}
+
+/* Mobile-friendly styles for headshot grid */
+@media (max-width: 768px) {
+    .headshot-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align the headshots in the column */
+        gap: 20px; /* Add space between the headshot boxes */
+    }
+
+    .headshot-box {
+        width: 100%; /* Ensure each box spans the full available width */
+        max-width: 400px; /* Optional: Limit the max size for better scaling */
+        text-align: center; /* Center-align the content inside each box */
+        padding: 0;
+        background: none;
+        box-sizing: border-box;
+    }
+
+    .headshot-box img {
+        width: 100%; /* Make the images responsive */
+        height: auto; /* Maintain the image aspect ratio */
+        display: block;
+    }
+
+    .headshot-box figcaption {
+        margin-top: 8px; /* Add spacing between the image and caption */
+    }
+
+    .emp_name {
+        font-weight: bold;
+        display: block; /* Ensure the name and position are stacked */
+    }
+
+    .emp_pos {
+        color: #7ac362; /* Adjust the color for better readability */
+    }
+
+    .placeholder-image {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        background-color: transparent;
+    }
 }
