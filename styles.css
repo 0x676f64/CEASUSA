@@ -1842,18 +1842,17 @@ figcaption {
         margin-bottom: 15px;
         display: block;
         font-family: 'Rubik', serif;
-        font-weight: 600;
+        font-weight: 800;
         font-style: normal;
         text-transform: uppercase;
         line-height: 1.5;
         letter-spacing: 1px;
         text-rendering: optimizeLegibility;
-        font-size: 30px;
+        font-size: 35px;
         margin: 0 auto 30px;
         clear: both;
         padding-top: 4px; 
         text-align: center;
-        text-shadow: 1px 1px #000000;
       }
 
       .description {
@@ -1862,7 +1861,6 @@ figcaption {
         line-height: 1.5;
         width: 50%;
         font-weight: 500;
-        text-shadow: 1px 1px #ccc;
         margin-right: auto;
         margin-left: auto;
       }
