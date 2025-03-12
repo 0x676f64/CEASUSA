@@ -57,25 +57,42 @@
         margin-left: 5px;
     }
     
-    .center-banner {
-        height: 600px;
-        margin-bottom: 50px;
-        margin-top: 30px;
-    }
+    .center-banner-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1450px;
+            margin: 0 auto;
+            overflow: hidden;
+            height: 500px; /* Adjust based on your banner height */
+        }
+        
+        .banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .banner.active {
+            opacity: 1;
+        }
 
     @media (max-width: 768px) {
-        .center-banner {
+        .center-banner-wrapper {
             height: 400px;
             margin-bottom: 30px;
         }
     }
 
     @media (max-width: 450px) {
-        .center-banner {
-            height: 300px;
-            width: 500px;
+        .center-banner-wrapper {
+            height: 200px;
+            width: 400px;
             padding: 10px;
-            height: 40%;
+          
         }
 
         .redirection-icons {
@@ -84,6 +101,30 @@
         }
     }
 </style>
+<script>
+    // JavaScript for banner rotation
+    document.addEventListener('DOMContentLoaded', function() {
+        const banners = document.querySelectorAll('.banner');
+        let currentBanner = 0;
+        
+        // Function to switch banners
+        function rotateBanner() {
+            // Hide all banners
+            banners.forEach(banner => {
+                banner.classList.remove('active');
+            });
+            
+            // Move to next banner
+            currentBanner = (currentBanner + 1) % banners.length;
+            
+            // Show current banner
+            banners[currentBanner].classList.add('active');
+        }
+        
+        // Set rotation interval (5 seconds)
+        setInterval(rotateBanner, 5000);
+    });
+</script>
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>    
@@ -184,7 +225,7 @@
                     <ul class="menu mobile-phone">
                         <li class="sales-tel">
                             <a href="tel:SALES:18774860634">
-                                <img src="https://cdn.shopify.com/s/files/1/0093/9173/4889/files/CEAS_Menu_Logo.png?v=1640276898" alt="Logo" width="18" height="18" class="small-logo">
+                                <img src="/assets/CEAS_Menu_Logo.png" alt="Logo" width="18" height="18" class="small-logo">
                                 SALES: 1-877-486-0634
                             </a>
                         </li>
@@ -245,8 +286,9 @@
             </section>
         </header>
         <div class="center-banner-wrapper">
-            <img src="assets\sptoolsusa-banner-ceas.jpg" alt="Center Banner" class="center-banner" />
-        </div>  
+            <img src="assets/sptoolsusa-banner-ceas.jpg" alt="Banner 1" class="banner active" />
+            <img src="assets/TEXA-car-truck-ohw-marine-bike-diagnostics.jpg" alt="Banner 2" class="banner" />
+        </div>
     </div>
     <div class="redirection-icons">
         <div class="promo-icon">
@@ -278,7 +320,7 @@
     <section class="section">
         <div class="container js-featured-promotions featured-promotions full-width--false" data-promo-animation="fadeInDown">
             <figure class="feature-section section-1 promo-1 one-third column medium-down--one-whole title-overlay-false promo-animation--true animated fadeInDown" data-aos="fade-in-down" data-aos-delay="0">
-                <a href="https://sptoolsusa.com" target="_blank" class="link-promo">
+                <a href="mailto:sales@ceasusa.com" target="_blank" class="link-promo">
                     <div class="feature-inner feature-style--rounded">
                         <div class="image-element_wrap">
                             <img alt src="assets/finance-button.png" class="promo-image">
@@ -287,7 +329,7 @@
                 </a>
             </figure>
             <figure class="feature-section section-1 promo-1 one-third column medium-down--one-whole title-overlay-false promo-animation--true animated fadeInDown">
-                <a href="https://sptoolsusa.com" target="_blank" class="link-promo">
+                <a href="mailto:sales@ceasusa.com" target="_blank" class="link-promo">
                     <div class="feature-inner feature-style--rounded">
                         <div class="image-element_wrap">
                             <img alt src="assets/money-back-button.png" class="promo-image">
@@ -296,7 +338,7 @@
                 </a>
             </figure>
             <figure class="feature-section section-1 promo-1 one-third column medium-down--one-whole title-overlay-false promo-animation--true animated fadeInDown">
-                <a href="https://sptoolsusa.com" target="_blank" class="link-promo">
+                <a href="mailto:sales@ceasusa.com" target="_blank" class="link-promo">
                     <div class="feature-inner feature-style--rounded">
                         <div class="image-element_wrap">
                             <img alt src="assets/in-house-button.png" class="promo-image">
