@@ -358,6 +358,7 @@ img {
     flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
     margin: 0 auto;
     max-width: 70%; /* Controls container width, ensuring responsiveness */
+    margin-top: 50px;
 }
 
 .promo-icon, .products-icon, .support-icon {
@@ -1822,7 +1823,7 @@ figcaption {
 
       .divider {
         margin-top: 30px;
-        border-bottom: 2px solid #7ac362;
+        border-bottom: 2px solid #000;
       }
 
       .top-divider {
