@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /user-profile/
+Disallow: /search/
+Disallow: /filter/
+Disallow: /sort/
+Disallow: /test/
+Disallow: /staging/
+Disallow: /beta/
+
+Sitemap: https://www.ceasusa.com/sitemap.xml
