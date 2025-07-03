@@ -268,6 +268,22 @@
         padding: 20px;
     }
    }
+    /* Make YouTube iframe scale to full width, 16:9 ratio */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto; /* center if you want */
+}
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 </style>
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -426,7 +442,16 @@
             </div>
            <section class="main-page">
             <div class="banner-container">
-               <div class="powr-video-slider" id="adbd1800_1751558765"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+              <div class="video-responsive">
+                  <iframe
+                    src="https://www.youtube.com/embed/Z-k2kyXrbl0"
+                    title="CEASUSA Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+
                 
                 
                 <!-- <img src="/assets/diagnostics-icons/Texa_Industry-Leading_Diagnostic-HERO_2000x.webp" alt="Texa Diagnostics Banner">
