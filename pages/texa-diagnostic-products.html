@@ -298,6 +298,42 @@
   width: 100%;
   height: 100%;
 }
+/* 1) Reset any spacing on the section itself */
+section.main-page {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2) Make sure the banner-container really has no padding/margin */
+.banner-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3) Keep your aspect-ratio hack, but nix any extra padding */
+.video-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;       /* no top/bottom margin, only centers horizontally */
+  padding: 0;           /* remove any “inner” padding */
+  padding-bottom: 56.25%; /* this isn’t visual padding—it just sets height */
+  height: 0;
+  overflow: hidden;
+}
+
+/* 4) Flush out the iframe */
+.video-responsive iframe {
+  display: block;       /* kills inline-block whitespace */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 </style>
 
