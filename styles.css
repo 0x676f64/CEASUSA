@@ -154,11 +154,11 @@ a {
     background: #ffffff;
     max-width: 1920px; /* Sets a max-width for the nav container */
     margin: 0 auto; /* Centers the nav container */
-    width: 100%; /* Ensures it takes full width up to max-width */
+    width: 80%;
 }
 
 .main-nav_wrapper {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .header_logo img {
