@@ -1911,10 +1911,10 @@ figcaption {
     .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px;
     width: 100%;
     max-width: 1200px; /* Increase the grid width */
-    padding: 20px;
+    padding: 10px;
     margin-right: auto;
     margin-left: auto;
     }
@@ -1930,13 +1930,14 @@ figcaption {
         width: 100%;
         height: auto; /* Maintain aspect ratio */
         max-width: 380px; /* Ensure images are large */
-        max-height: 285px; /* Constrain height */
-        object-fit: cover;
+       /*  max-height: 285px; Constrain height
+        object-fit: cover; */
         cursor: pointer;
     }
 
     .product h3 {
         font-weight: 500;
+        font-size:1em;
     }
 
     .product p {
