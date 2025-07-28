@@ -2027,18 +2027,18 @@ figcaption {
     }
 }
 .axone-voice .product {
-    border: 0px solid #ccc; /* Blueish border */
-    background-color: #e9e9e9;  /* Light blue background */
+    border: 1px solid #e9e9e9; /* Blueish border */
+    background-color: #f3f3f3;  /* Light blue background */
 }
 
 .axone-plus .product {
-    border: 0px solid #ccc; /* Your brand green */
-    background-color: #e9e9e9;  /* Light green background */
+    border: 1px solid #e9e9e9; /* Your brand green */
+    background-color: #f3f3f3;  /* Light green background */
 }
 
 .axone-light .product {
-    border: 0px solid #ccc; /* Orange accent */
-    background-color: #e9e9e9;  /* Light orange background */
+    border: 1px solid #e9e9e9; /* Orange accent */
+    background-color: #f3f3f3;  /* Light orange background */
 }
 
 
@@ -2046,18 +2046,18 @@ figcaption {
 
 /* Distinguish tablet packages by color */
 .product.axone-voice {
-    border: 2px solid #ccc; /* Blue border */
-    background-color: #e9e9e9; /* Light blue background */
+    border: 1px solid #e9e9e9; /* Blue border */
+    background-color: #f3f3f3; /* Light blue background */
 }
 
 .product.axone-plus {
-    border: 2px solid #ccc; /* Brand green border */
-    background-color: #e9e9e9; /* Light green background */
+    border: 1px solid #e9e9e9; /* Brand green border */
+    background-color: #f3f3f3; /* Light green background */
 }
 
 .product.axone-light {
-    border: 2px solid #ccc; /* Orange border */
-    background-color: #e9e9e9; /* Light orange background */
+    border: 1px solid #e9e9e9; /* Orange border */
+    background-color: #f3f3f3; /* Light orange background */
 }
 
 /* Badge styling for tablet labels */
