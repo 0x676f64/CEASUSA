@@ -2026,5 +2026,19 @@ figcaption {
         grid-template-columns: 1fr;
     }
 }
+.axone-voice .product {
+    border: 2px solid #4a90e2; /* Blueish border */
+    background-color: #e6f0ff;  /* Light blue background */
+}
+
+.axone-plus .product {
+    border: 2px solid #7ac362; /* Your brand green */
+    background-color: #e9f6e9;  /* Light green background */
+}
+
+.axone-light .product {
+    border: 2px solid #f5a623; /* Orange accent */
+    background-color: #fff4e5;  /* Light orange background */
+}
 
 
