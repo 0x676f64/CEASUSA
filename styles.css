@@ -1910,14 +1910,15 @@ figcaption {
     
     .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     width: 100%;
-    max-width: 1200px; /* Increase the grid width */
+    max-width: 1200px;
     padding: 10px;
     margin-right: auto;
     margin-left: auto;
-    }
+}
+
 
     .product {
         padding: 10px;
@@ -2014,4 +2015,16 @@ figcaption {
             margin-left: auto;
         }
       }
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
