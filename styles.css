@@ -2042,3 +2042,67 @@ figcaption {
 }
 
 
+
+
+/* Distinguish tablet packages by color */
+.product.axone-voice {
+    border: 2px solid #4a90e2; /* Blue border */
+    background-color: #e6f0ff; /* Light blue background */
+}
+
+.product.axone-plus {
+    border: 2px solid #7ac362; /* Brand green border */
+    background-color: #e9f6e9; /* Light green background */
+}
+
+.product.axone-light {
+    border: 2px solid #f5a623; /* Orange border */
+    background-color: #fff4e5; /* Light orange background */
+}
+
+/* Badge styling for tablet labels */
+.product .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+    z-index: 10;
+    user-select: none;
+}
+
+.product.axone-voice .badge {
+    background-color: #4a90e2;
+}
+
+.product.axone-plus .badge {
+    background-color: #7ac362;
+}
+
+.product.axone-light .badge {
+    background-color: #f5a623;
+}
+
+/* Ensure product positioning for badge */
+.product {
+    position: relative;
+    padding: 20px 10px 10px 10px; /* Extra top padding for badge */
+    box-sizing: border-box;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
