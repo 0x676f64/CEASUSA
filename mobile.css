@@ -1,0 +1,367 @@
+/* Responsive Mobile adjustments based on dynamic height and width of screen size */
+
+/* Texa Car */
+
+.title-car {
+        text-align: center;
+        font-size: 3rem;
+        color: #7ac362;
+        
+    }
+    @media (max-width: 1024px) {
+        .car-banner-text h1{
+            margin-bottom: 10rem;
+            text-shadow: 2px 2px #000;
+        }
+
+        .car-banner-container img {
+            height: 500px;
+        }
+    }
+
+    @media (max-width: 820px) {
+        .car-banner-container img {
+            height: 400px;
+        }
+
+        .car-banner-container h1 {
+            margin-top: 10rem;
+        }
+
+        .title-car {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .car-banner-text h1 {
+            margin-top: 10rem;
+            font-size: 3rem;
+        }
+
+        .car-banner-container img {
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        .car-banner-container img{
+            height: 200px;
+        }
+
+        .car-banner-text h1 {
+            display: none;
+        }
+
+        .product-grid {
+           display: block;
+            padding: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+/* Texa Truck */
+
+.title-truck {
+        text-align: center;
+        font-size: 3rem;
+        color: #7ac362;
+        
+    }
+    @media (max-width: 1024px) {
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-text h1{
+            margin-bottom: 10rem;
+            text-shadow: 2px 2px #000;
+        }
+
+        .car-banner-container img {
+            height: 500px;
+        }
+    }
+
+    @media (max-width: 820px) {
+        .car-banner-container img {
+            height: 400px;
+        }
+
+        .car-banner-container h1 {
+            margin-top: 10rem;
+        }
+
+        .title-truck {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .car-banner-text h1 {
+            margin-top: 10rem;
+            font-size: 3rem;
+        }
+
+        .car-banner-container img {
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        .car-banner-container img{
+            height: 200px;
+        }
+
+        .car-banner-text h1 {
+            display: none;
+        }
+
+        .product-grid {
+           display: block;
+            padding: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    /* Texa Off-Highway */
+
+    .title-highway {
+        text-align: center;
+        font-size: 3rem;
+        color: #7ac362;
+        
+    }
+    @media (max-width: 1024px) {
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-text h1{
+            margin-bottom: 10rem;
+            text-shadow: 2px 2px #000;
+        }
+
+        .car-banner-container img {
+            height: 500px;
+        }
+    }
+
+    @media (max-width: 820px) {
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-container img {
+            height: 400px;
+        }
+
+        .car-banner-container h1 {
+            margin-top: 10rem;
+        }
+
+        .title-highway {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-text h1 {
+            margin-top: 10rem;
+            font-size: 3rem;
+        }
+
+        .car-banner-container img {
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-container img{
+            height: 200px;
+        }
+
+        .car-banner-text h1 {
+            display: none;
+        }
+
+        .product-grid {
+           display: block;
+            padding: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    /* Texa Marine */
+
+    .title-marine {
+        text-align: center;
+        font-size: 3rem;
+        color: #7ac362;
+        
+    }
+    @media (max-width: 1024px) {
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-text h1{
+            margin-bottom: 10rem;
+            text-shadow: 2px 2px #000;
+        }
+
+        .car-banner-container img {
+            height: 500px;
+        }
+    }
+
+    @media (max-width: 820px) {
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-container img {
+            height: 400px;
+        }
+
+        .car-banner-container h1 {
+            margin-top: 10rem;
+        }
+
+        .title-marine {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-text h1 {
+            margin-top: 10rem;
+            font-size: 3rem;
+        }
+
+        .car-banner-container img {
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-container img{
+            height: 200px;
+        }
+
+        .car-banner-text h1 {
+            display: none;
+        }
+
+        .product-grid {
+           display: block;
+            padding: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    /* Texa Powersports */
+
+    .title-powersports {
+        text-align: center;
+        font-size: 3rem;
+        color: #7ac362;
+        
+    }
+    @media (max-width: 1024px) {
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-text h1{
+            margin-bottom: 10rem;
+            text-shadow: 2px 2px #000;
+        }
+
+        .car-banner-container img {
+            height: 500px;
+        }
+    }
+
+    @media (max-width: 820px) {
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-container img {
+            height: 400px;
+        }
+
+        .car-banner-container h1 {
+            margin-top: 10rem;
+        }
+
+        .title-powersports {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-text h1 {
+            margin-top: 10rem;
+            font-size: 3rem;
+        }
+
+        .car-banner-container img {
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        body {
+            overflow-y: hidden;
+        }
+
+        .car-banner-container img{
+            height: 200px;
+        }
+
+        .car-banner-text h1 {
+            display: none;
+        }
+
+        .product-grid {
+           display: block;
+            padding: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
