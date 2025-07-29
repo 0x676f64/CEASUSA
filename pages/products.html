@@ -15,15 +15,14 @@
         border-top: 2px solid #7ac362;
     }
 
-    .product img {
-        max-width: 380px;
-        max-height: 400px;
-        padding: 20px;
+    .product-brand img {
+        width: 100%;
+        padding: 10px;
         cursor: pointer;
         transition: transform 0.5s ease-in-out;
     }
 
-    .product img:hover {
+    .product-brand img:hover {
     transform: scale(1.3);
 }
 
@@ -42,6 +41,13 @@
         font-weight: 700;
         color: #7ac362;
         text-shadow: 2px 2px;
+    }
+
+    .product-brand {
+        position: relative;
+        padding: 20px 10px 10px 10px; /* Extra top padding for badge */
+        box-sizing: border-box;
+        margin: 10px;
     }
 
     @media (max-width: 1024px) {
@@ -283,52 +289,52 @@
             <div class="seperator"></div>
             <h1 class="title-brands">OUR BRANDS</h1>
             <div class="product-grid">
-                <div class="product">
+                <div class="product-brand">
                     <a href="https://texa.com">
                     <img src="/assets/texa.png" alt="Product 1">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="https://sptoolsusa.com">
                     <img src="/assets/sp.png" alt="Product 2">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="https://www.advantageengineering.com/">
                     <img src="/assets/advantage-engineering.png" alt="Product 3">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="/collections/ateq.html">
                     <img src="/assets/ateq.png" alt="Product 4">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="/collections/hessaire.html">
                     <img src="/assets/hessaire.png" alt="Product 5">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="/collections/rotary.html">
                     <img src="/assets/rotary.png" alt="Product 6">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="/">
                     <img src="/assets/qsp.png" alt="Product 7">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="/">
                     <img src="/assets/yellow-jacket.png" alt="Product 8">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="/collections/drew-technologies.html">
                     <img src="/assets/drew.png" alt="Product 8">
                     </a>
                 </div>
-                <div class="product">
+                <div class="product-brand">
                     <a href="https://theliftsuperstoregc.com/">
                     <img src="/assets/life-super-store.png" alt="Product 8">
                     </a>
