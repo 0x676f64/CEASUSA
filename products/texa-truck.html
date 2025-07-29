@@ -9,78 +9,16 @@
     <link href="/styles.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="/src/script.js"></script>
-   <style>
-    .title-truck {
-        text-align: center;
-        font-size: 3rem;
-        color: #7ac362;
-        text-shadow: 1px 1px;
-    }
-    @media (max-width: 1024px) {
-        .car-banner-text h1{
-            margin-bottom: 10rem;
-            text-shadow: 2px 2px #000;
-        }
-
-        .car-banner-container img {
-            height: 500px;
-        }
-    }
-
-    @media (max-width: 820px) {
-        .car-banner-container img {
-            height: 400px;
-        }
-
-        .car-banner-container h1 {
-            margin-top: 10rem;
-        }
-
-        .title-truck {
-            font-size: 2rem;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .car-banner-text h1 {
-            margin-top: 10rem;
-            font-size: 3rem;
-        }
-
-        .car-banner-container img {
-            height: 300px;
-        }
-    }
-
-    @media (max-width: 450px) {
-
-        .car-banner-container img{
-            height: 200px;
-        }
-
-        .car-banner-text h1 {
-            display: none;
-        }
-
-        .product-grid {
-           display: block;
-            padding: 20px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-   </style>
+    <link rel="stylesheet" href="/mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>    
     <script>
         AOS.init({
-            offset: 100, // Offset (distance from the viewport) to trigger animation
-            delay: 300,  // Delay for the animation
-            duration: 1000, // Duration for the animation
-            easing: 'ease-in-out', // Easing function for the animation
+            offset: 100,
+            delay: 300,
+            duration: 1000,
+            easing: 'ease-in-out',
         });
-    </script>
-    <script>
         function toggleMobileNav() {
             const menu = document.getElementById('menu');
             menu.classList.toggle('active');
@@ -131,12 +69,12 @@
                             <label for="productsToggle" class="menu-item">Products</label>
                             <ul class="submenu">
                                 <li><a href="/pages/brands-we-carry.html">Our Brands</a></li>
-                                <li><a href="/products/a-c.html">A/C</a></li>
+                                <li><a href="/collections/a-c.html">A/C</a></li>
                                 <li><a href="/pages/texa-diagnostic-products.html">Diagnostics</a></li>
-                                <li><a href="/products/wheel-tire.html">Wheel and Tire</a></li>
-                                <li><a href="/products/lifts.html">Lifts</a></li>
-                                <li><a href="/products/alignments.html">Alignments</a></li>
-                                <li><a href="/products/ceas-lifts.html">CEAS Lifts</a></li>
+                                <li><a href="/collections/wheel-tire-machines.html">Wheel & Tire Machines</a></li>
+                                <li><a href="/collections/lifts.html">Lifts</a></li>
+                                <li><a href="/collections/alignment-machines.html">Alignments</a></li>
+                                <li><a href="/collections/ceas-lifts.html">CEAS Lifts</a></li>
                             </ul>
                         </li>
                         <li class="get-started">
@@ -208,13 +146,13 @@
                             <li class="sublink">
                                 <a href="/pages/products" class="dropdown_link--vertical" data-dropdown-rel="products">Products<span class="icon-down-arrow">▼</span></a>
                                 <ul class="dropdown">
-                                <li><a href="/pages/brands-we-carry.html">Our Brands</a></li>
-                                <li><a href="/products/a-c.html">A/C</a></li>
-                                <li><a href="/pages/texa-diagnostic-products.html">Diagnostics</a></li>
-                                <li><a href="/products/wheel-tire.html">Wheel and Tire</a></li>
-                                <li><a href="/products/lifts.html">Lifts</a></li>
-                                <li><a href="/products/alignments.html">Alignments</a></li>
-                                <li><a href="/products/ceas-lifts.html">CEAS Lifts</a></li>
+                                    <li><a href="/pages/brands-we-carry.html">Our Brands</a></li>
+                                    <li><a href="/collections/a-c.html">A/C</a></li>
+                                    <li><a href="/pages/texa-diagnostic-products.html">Diagnostics</a></li>
+                                    <li><a href="/collections/wheel-tire-machines.html">Wheel & Tire Machines</a></li>
+                                    <li><a href="/collections/lifts.html">Lifts</a></li>
+                                    <li><a href="/collections/alignment-machines.html">Alignments</a></li>
+                                    <li><a href="/collections/ceas-lifts.html">CEAS Lifts</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -234,14 +172,14 @@
             <h1 class="title-truck">TEXA TRUCK</h1>
             <div class="product-grid">
                 <div class="product">
-                    <a href="/products/collections/texa-truck/texa-hd-truck-kit.html">
+                    <a href="/collections/texa-truck/products/copy-of-texa-hd-truck-kit-with-axone-nemo-tablet.html">
                     <img src="/assets/diagnostics-icons/texa-truck/AXVHDTRK.webp" alt="Product 1">
                     </a>
                     <h3>TEXA TRUCK DIAGNOSTIC KIT w/ AXONE VOICE® Tablet and NAVIGATOR TXT MULTIHUB</h3>
                     <p>$9.495.00</p>
                 </div>
                 <div class="product">
-                    <a href="/products/collections/texa-truck/texa-truck-nemo-plus-tablet.html">
+                    <a href="/collections/texa-truck/products/texa-truck-diagnostic-kit-w-axone-nemo-plus-tablet-and-navigator-txt-multihub-copy.html">
                     <img src="/assets/diagnostics-icons/texa-truck/AXPLHDTRK.webp" alt="Product 2">
                     </a>
                     <h3>TEXA TRUCK DIAGNOSTIC KIT w/ AXONE NEMO PLUS Tablet and NAVIGATOR TXT MULTIHUB</h3>
