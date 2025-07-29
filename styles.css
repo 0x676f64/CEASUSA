@@ -918,7 +918,7 @@ a, a:visited, a span {
       #menu {
         position: absolute;
         width: 80vw;
-        height: calc(400vh - 80px);
+        height: auto;
         margin: 0;
         padding: 50px 30px;
         padding-top: 45px;
@@ -931,8 +931,7 @@ a, a:visited, a span {
         top: 36px;
         left: -40px;
         opacity: 1;
-        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.8);
-        box-shadow: inset 5px 15px 55px rgba(0, 0, 0, 0.8);
+        z-index: 0;
       }
 
       /* Slide-in animation */
@@ -978,7 +977,6 @@ a, a:visited, a span {
             max-height: 0; /* Start hidden */
             overflow: hidden; /* Prevent content from showing */
             transition: max-height 0.8s ease-in-out, opacity 0.8s ease, transform 0.8s ease; /* Smooth animations */
-            padding: 5px 10px;
             margin: 10px auto;
             border-radius: 8px;
             background-color: #0F1922;
@@ -1038,7 +1036,7 @@ a, a:visited, a span {
             font-size: 20px; /* Adjust the font size */
             font-weight: bold; /* Make the text bold */
             color: #ffffff !important; /* White font color */
-            background: linear-gradient(90deg, #7ac362, #5fc9f3); /* Bubble background color */
+            background: linear-gradient(90deg, #7ac362, #5ff3a9); /* Bubble background color */
             text-decoration: none; /* Remove underline */
             padding: 10px 20px; /* Add padding for the bubble effect */
             border-radius: 50px; /* Make it rounded like a bubble */
@@ -1481,6 +1479,8 @@ figcaption {
         display: inline-block;
         margin: 20px 0;
     }
+
+    /* Tab elements */
 
     .tab-header {
         display: flex;
@@ -2041,9 +2041,6 @@ figcaption {
     background-color: #f3f3f3;  /* Light orange background */
 }
 
-
-
-
 /* Distinguish tablet packages by color */
 .product.axone-voice {
     border: 1px solid #e9e9e9; /* Blue border */
@@ -2091,18 +2088,42 @@ figcaption {
     position: relative;
     padding: 20px 10px 10px 10px; /* Extra top padding for badge */
     box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #e9e9e9;
+    background-color: #f3f3f3;
 }
 
 /* Responsive grid adjustments */
 @media (max-width: 1024px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .redirection-icons {
+        margin-top: 20px;
+        align-items: center;
     }
 }
 
 @media (max-width: 600px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
     .product-grid {
         grid-template-columns: 1fr;
-        padding: 10px;
+        padding: 20px;
+    }
+
+    .redirection-icons {
+        align-items: center;
+        width: 50%;
     }
 }
