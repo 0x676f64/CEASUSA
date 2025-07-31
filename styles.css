@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Rubik, sans-serif;
 }
 
 /* Keyframe Animation for Slide-In */
@@ -179,12 +180,13 @@ a {
 
 .navg > li a {
     color: #333;
-    font-size: 15px;
+    font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     transition: color 0.3s;
     z-index: 9999;
+    font-family: Poppins, sans-serif;
 }
 
 .navg > li a:hover {
@@ -979,7 +981,7 @@ a, a:visited, a span {
             transition: max-height 0.8s ease-in-out, opacity 0.8s ease, transform 0.8s ease; /* Smooth animations */
             margin: 10px auto;
             border-radius: 8px;
-            background-color: #0F1922;
+            background-color: #0f1922c0;
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
         }
 
@@ -1491,9 +1493,10 @@ figcaption {
     .tab-link {
         padding: 10px 20px;
         border: 1px solid #ccc;
-        background-color: #f8f8f8;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
         cursor: pointer;
         font-size: 16px;
+        border-radius: 10px;
     }
 
     .tab-link.active {
@@ -1504,55 +1507,72 @@ figcaption {
     .tab-content {
         display: none;
         max-width: 80%;
-        background-color: #ccc;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
         padding: 40px;
         font-weight: 400;
         border-radius: 5px;
+        border: 1px solid #ccc;
     }
 
     .tab-content.active {
         display: block;
     }
 
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-        .navg {
-            flex-direction: column;
-        }
-
-        .dropdown {
-            position: static;
-            width: 100%;
-        }
-
-        .product-container {
-            flex-direction: column;
-        }
-
-        .product-details {
-            padding: 20px;
-        }
-
-        .tab-link {
-            margin-right: auto;
-            margin-left: auto;
-            width: 100%;
-        }
-
-        .tab-content {
-            margin-right: auto;
-            margin-left: auto;
-            background-color: #ccc;
-            padding: 20px;
-            max-width: 100%;
-            font-weight: 400;
-        }
-
-        #main-image {
-            width: 100%;
-            max-width: 100%;
-        }
+   /* Mobile Styles */
+@media (max-width: 768px) {
+    .dropdown {
+        position: static;
+        width: 100%;
     }
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-details {
+        padding: 20px;
+    }
+
+    .tab-header {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+    .tab-link {
+        display: flex;
+        flex-direction: row; /* Ensures horizontal arrangement */
+        flex-wrap: nowrap; /* Prevents wrapping to the next line */
+        width: 100%; /* Use full width to allow items to align in a row */
+        background: linear-gradient(135deg, #f1f1f1, #e9ecef);
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Aligns items vertically */
+        margin-top: 5px;
+    }
+
+    /* Ensure individual tab-link items (e.g., <a> or <li>) are inline */
+    .tab-link > * {
+        flex: 0 0 auto; /* Prevents items from stretching */
+        margin: 0 10px; /* Optional: Adds spacing between tab links */
+    }
+
+    .tab-content {
+        margin-right: auto;
+        margin-left: auto;
+        background: linear-gradient(135deg, #fcfbfb, #e9ecef);
+        padding: 20px;
+        max-width: 100%;
+        font-weight: 400;
+        border: 1px solid #ccc;
+    }
+
+    #main-image {
+        width: 100%;
+        height: auto;
+    }
+
+}
 
      /* Dropdown Menu CSS */
      .navg li {
@@ -1956,6 +1976,38 @@ figcaption {
     @media (max-width: 1024px) {
         .tab-content {
             width: 100%;
+            border: 1px solid #ccc;
+        }
+      }
+
+    @media (max-width: 912px) {
+        #main-image {
+          width: 80%;
+          height: 50%;
+        }
+
+        .tab-header {
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .tab-link {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 0.8rem;
+            width: 100%;
+            margin-top: 5px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+
+        .tab-content {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border: 1px solid #ccc;
         }
       }
 
@@ -1964,10 +2016,34 @@ figcaption {
           width: 90%;
           height: 60%;
         }
+
+        .tab-link {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 0.9rem;
+            width: 100%;
+            margin-top: 5px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+
+        .tab-content {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border: 1px solid #ccc;
+        }
         
       }
 
       @media (max-width: 768px) {
+        .tab-header {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
         .tab-content {
             width: 100%;
         }
