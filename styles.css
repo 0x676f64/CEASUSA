@@ -2242,7 +2242,7 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 60px;
+  gap: 40px;
   margin: 50px auto 80px;
   flex-wrap: wrap;
   padding: 0 20px;
@@ -2251,13 +2251,13 @@ figcaption {
 
 .tablet-item {
   flex: 1 1 300px;
-  max-width: 300px;
+  max-width: 375px;
   text-align: center;
 }
 
 .tablet-item img {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -2281,7 +2281,7 @@ figcaption {
   align-items: center;
   gap: 24px;
   padding: 40px 20px;
-  background-color: #f8f8f8;
+  background-color: #000;
   flex-wrap: wrap;
 }
 
@@ -2314,7 +2314,7 @@ figcaption {
 
 .nav-box img {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
   margin-bottom: 15px;
 }
