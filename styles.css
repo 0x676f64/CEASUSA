@@ -2257,7 +2257,7 @@ figcaption {
 
 .tablet-item img {
   width: 100%;
-  max-width: 180px;
+  max-width: 300px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -2314,7 +2314,7 @@ figcaption {
 
 .nav-box img {
   width: 100%;
-  max-width: 160px;
+  max-width: 300px;
   height: auto;
   margin-bottom: 15px;
 }
