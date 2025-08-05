@@ -2345,11 +2345,11 @@ figcaption {
 .navigator-compare-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 0px;
   align-items: start;
   max-width: 1200px;
-  margin: 4rem auto;
-  padding: 0 2rem;
+  margin: 4rem 1rem;
+  padding: 0 1rem;
 }
 
 .nav-col img {
