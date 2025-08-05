@@ -2366,4 +2366,27 @@ figcaption {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+.tablet-features {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: 0.95rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tablet-features td {
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+}
+
+.tablet-features tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tablet-features tr:nth-child(odd) {
+  background-color: #ffffff;
+}
 
