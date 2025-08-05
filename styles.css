@@ -2391,9 +2391,9 @@ figcaption {
 }
 .environment-icons {
   display: flex;
-  gap: 10px;
+  gap: 3px;
   margin: 10px 0 15px;
-  align-items: center;
+  align-items: left;
   flex-wrap: wrap;
 }
 .environment-icons img {
