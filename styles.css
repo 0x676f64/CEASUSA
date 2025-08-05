@@ -2389,4 +2389,11 @@ figcaption {
 .tablet-features tr:nth-child(odd) {
   background-color: #ffffff;
 }
+.environment-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
