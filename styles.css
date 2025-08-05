@@ -2396,4 +2396,7 @@ figcaption {
   align-items: center;
   flex-wrap: wrap;
 }
-
+.environment-icons img {
+  width: 32px;
+  height: 32px;
+}
