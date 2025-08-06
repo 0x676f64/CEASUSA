@@ -2400,3 +2400,49 @@ figcaption {
   width: 48px;
   height: 48px;
 }
+/* Navigator Comparison Section */
+.navigator-compare-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Center content horizontally */
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 80px auto; /* Center on page with space above/below */
+  padding: 0 20px;
+}
+
+.nav-col {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.nav-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-col h4 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  line-height: 1.3;
+}
+
+.nav-col p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.environment-icons {
+  margin: 15px 0;
+}
+
+.environment-icons img {
+  width: 40px;
+  margin: 0 5px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
