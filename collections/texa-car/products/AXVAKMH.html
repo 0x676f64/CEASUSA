@@ -245,7 +245,11 @@
                     <div class="image-wrapper">
                     <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
                     <!-- Main Image Display -->
-                    <img id="main-image" src="/assets/diagnostics-icons/texa-car/axvakmh.webp" alt="TEXA AXONE VOICE CAR DIAGNOSTIC KIT w/ MULTIHUB">
+                   <div class="image-zoom-container">
+                      <img id="main-image" src="/assets/diagnostics-icons/texa-car/axvakmh.webp" alt="TEXA AXONE VOICE CAR DIAGNOSTIC KIT w/ MULTIHUB">
+                    </div>
+
+                        
                     <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
                     </div>
 
@@ -392,6 +396,58 @@
     }
   </script>
 <div class="powr-video-slider" id="c6bca0bc_1754327698"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+<div id="lightbox-overlay" class="lightbox-overlay" style="display:none">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" src="" alt="Enlarged image">
+  <a class="lightbox-prev">&#10094;</a>
+  <a class="lightbox-next">&#10095;</a>
+</div>
+    <script>
+(function(){
+  const overlay   = document.getElementById('lightbox-overlay');
+  const lbImg     = overlay.querySelector('.lightbox-img');
+  const btnClose  = overlay.querySelector('.lightbox-close');
+  const btnPrev   = overlay.querySelector('.lightbox-prev');
+  const btnNext   = overlay.querySelector('.lightbox-next');
+
+  // gather all large-image URLs (main + thumbnails)
+  const thumbs = Array.from(document.querySelectorAll('.thumbnail-container img'))
+    .map(img => img.src.replace('-brole.webp','.webp')); // adjust if your thumbnail naming differs
+  // include the main image as first item
+  thumbs.unshift(document.getElementById('main-image').src);
+
+  let current = 0;
+
+  function showLightbox(idx) {
+    current = idx;
+    lbImg.src = thumbs[current];
+    overlay.style.display = 'flex';
+  }
+
+  // open on main image click
+  document.getElementById('main-image')
+    .addEventListener('click', ()=> showLightbox(0));
+
+  // open on any thumbnail click
+  document.querySelectorAll('.thumbnail-container img')
+    .forEach((img, i) => img.addEventListener('click', ()=>{
+      // thumbnails start at index 1 in our array
+      showLightbox(i+1);
+    }));
+
+  btnClose.addEventListener('click', ()=> overlay.style.display='none');
+  overlay.addEventListener('click', e => {
+    if(e.target === overlay) overlay.style.display='none';
+  });
+  btnPrev.addEventListener('click', ()=>{
+    showLightbox((current-1+thumbs.length)%thumbs.length);
+  });
+  btnNext.addEventListener('click', ()=>{
+    showLightbox((current+1)%thumbs.length);
+  });
+})();
+</script>
+
 </body>
 <footer class="footer-banner">
     <div class="subscribe-content">
