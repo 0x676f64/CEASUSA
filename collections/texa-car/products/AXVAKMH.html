@@ -437,11 +437,11 @@
     .addEventListener('click', ()=> showLightbox(0));
 
   // open on any thumbnail click
-  document.querySelectorAll('.thumbnail-container img')
-    .forEach((img, i) => img.addEventListener('click', ()=>{
+  // document.querySelectorAll('.thumbnail-container img')
+    // .forEach((img, i) => img.addEventListener('click', ()=>{
       // thumbnails start at index 1 in our array
-      showLightbox(i+1);
-    }));
+     //  showLightbox(i+1);
+    // }));
 
   btnClose.addEventListener('click', ()=> overlay.style.display='none');
   overlay.addEventListener('click', e => {
