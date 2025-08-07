@@ -2496,4 +2496,29 @@ figcaption {
   top: 50%; right: 30px;
   transform: translateY(-50%);
 }
+/* ─── Thumbnail Container ─── */
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;            /* allow them to wrap instead of one long row */
+  justify-content: center;    /* center the row(s) */
+  gap: 10px;                  /* space between each thumb */
+  max-width: 100%;            /* never exceed the parent width */
+  margin: 20px auto;          /* some breathing room */
+  overflow: hidden;           /* hide any accidental spillover */
+}
+
+/* ─── Thumbnail Images ─── */
+.thumbnail-container img.thumbnail {
+  width: 80px;                /* fix a uniform width */
+  height: 80px;               /* and height */
+  object-fit: contain;        /* preserve aspect ratio & no stretching */
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.thumbnail-container img.thumbnail.active,
+.thumbnail-container img.thumbnail:hover {
+  border-color: #7ac362;      /* highlight the selected thumb */
+}
 
