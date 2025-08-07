@@ -1665,7 +1665,7 @@ figcaption {
       #main-image {
         width: 100%;
         max-width: 500px;
-        height: 500px;
+        height: auto;
         border: none;
       }
 
