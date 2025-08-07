@@ -1643,7 +1643,7 @@ figcaption {
       }
     
       .thumbnail {
-        width: 100px;
+        width: 200px;
         height: auto;
         cursor: pointer;
         border: 12px solid transparent;
