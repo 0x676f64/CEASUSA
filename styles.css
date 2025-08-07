@@ -2415,7 +2415,7 @@ figcaption {
 .nav-col {
   flex: 1 1 300px;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
 }
 
 .nav-col img {
