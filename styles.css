@@ -2521,4 +2521,31 @@ figcaption {
 .thumbnail-container img.thumbnail:hover {
   border-color: #7ac362;      /* highlight the selected thumb */
 }
+/* ─── FIXED‐SIZE IMAGE WRAPPER ─── */
+.image-wrapper {
+  width: 100%;
+  max-width: 600px;     /* or whatever max width you like */
+  aspect-ratio: 4 / 3;  /* lock in your images’ natural ratio */
+  margin: 0 auto;       /* center it */
+  overflow: hidden;     
+  position: relative;   
+}
+
+/* ─── MAIN IMAGE SIZING ─── */
+.image-wrapper img#main-image {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+  object-fit: contain;  /* preserves intrinsic ratio */
+}
+
+/* ─── OVERRIDE CONFLICTING RULES ─── */
+.product-image img,
+#main-image {
+  max-width: none !important;
+  /* remove any height:auto or width:100% rules here */
+}
 
