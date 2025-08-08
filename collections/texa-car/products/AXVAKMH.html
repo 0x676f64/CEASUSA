@@ -243,16 +243,24 @@
             <main>
                 <div class="product-container">
                   <div class="product-image">
+                    <!-- BEGIN updated wrapper -->
                     <div class="image-wrapper">
-                    <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
-                    <!-- Main Image Display -->
-                   <div class="image-zoom-container">
-                      <img id="main-image" src="/assets/diagnostics-icons/texa-car/axvakmh.webp" alt="TEXA AXONE VOICE CAR DIAGNOSTIC KIT w/ MULTIHUB">
+                      <!-- PREV ARROW -->
+                      <button class="slider-btn prev-btn" aria-label="Previous Image" onclick="prevImage()">‹</button>
+                
+                      <!-- ZOOM+MAIN IMAGE -->
+                      <div class="image-zoom-container">
+                        <img
+                          id="main-image"
+                          src="/assets/diagnostics-icons/texa-car/axvakmh.webp"
+                          alt="TEXA AXONE VOICE CAR DIAGNOSTIC KIT w/ MULTIHUB"
+                        />
+                      </div>
+                
+                      <!-- NEXT ARROW -->
+                      <button class="slider-btn next-btn" aria-label="Next Image" onclick="nextImage()">›</button>
                     </div>
-
-                        
-                    <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
-                    </div>
+                    <!-- END updated wrapper -->
 
                     <!-- Thumbnail Previews -->
                     
