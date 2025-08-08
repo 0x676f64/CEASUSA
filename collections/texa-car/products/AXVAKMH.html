@@ -465,6 +465,44 @@
   });
 })();
 </script>
+<script>
+(function(){
+  const mainImage = document.getElementById('main-image');
+  const prevBtn   = document.querySelector('.prev-btn');
+  const nextBtn   = document.querySelector('.next-btn');
+
+  // Build an array of all gallery URLs:
+  // First entry is the current src, then each thumbnail src
+  const thumbs = [
+    mainImage.src,
+    ...Array.from(document.querySelectorAll('.thumbnail-container img'))
+         .map(img => img.src)
+  ];
+
+  let currentIndex = 0;
+
+  function showImage(idx) {
+    currentIndex = (idx + thumbs.length) % thumbs.length;
+    mainImage.src = thumbs[currentIndex];
+    // optional: update thumbnail “active” border:
+    document.querySelectorAll('.thumbnail-container img')
+      .forEach((img,i) => {
+        img.classList.toggle('active', i+1 === currentIndex);
+      });
+  }
+
+  prevBtn.addEventListener('click', ()=> showImage(currentIndex - 1));
+  nextBtn.addEventListener('click', ()=> showImage(currentIndex + 1));
+
+  // Also keep clicking thumbnails in sync:
+  document.querySelectorAll('.thumbnail-container img')
+    .forEach((img, i) => {
+      img.addEventListener('click', ()=>{
+        showImage(i+1);
+      });
+    });
+})();
+</script>
 
 </body>
 <footer class="footer-banner">
