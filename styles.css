@@ -1939,6 +1939,16 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
 }
+    .product-grid-3w {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
     .product {
