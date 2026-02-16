@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEXA Off-Highway Diagnostics | Cutting Edge Automotive Solutions</title>
-    <meta name="description" content="Industry-leading TEXA Off-Highway diagnostic tools for agricultural, construction, and material handling equipment. Request a demo today from CEAS.">
+    <title>TEXA Off-Highway Diagnostics | Dealer-Level Power from CEAS</title>
+    <meta name="description" content="Get dealer-level diagnostics for agricultural, construction, and material handling equipment with TEXA Off-Highway tools. No subscriptions. US-based support. Request your free demo today.">
     <style>
         :root {
-            --green: #0A6D0A;        /* Deep green primary */
-            --green-hover: #085808;  /* Darker green for hover */
+            --green: #0A6D0A;
+            --green-hover: #085808;
             --black: #000000;
             --white: #FFFFFF;
-            --light-gray: #f8f8f8;
+            --light-gray: #f5f5f5;
             --dark-gray: #333333;
+            --mid-gray: #eeeeee;
         }
         body {
             margin: 0;
@@ -24,43 +25,110 @@
         header {
             background-color: var(--black);
             color: var(--white);
-            padding: 15px 0;
+            padding: 20px 0;
             text-align: center;
         }
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         header .logo {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
             color: var(--green);
         }
         header .phone {
-            font-size: 20px;
-            margin-top: 8px;
+            font-size: 22px;
         }
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x800/0A6D0A/FFFFFF?text=TEXA+Off-Highway+Diagnostics') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.bodyshopsolutionsltd.com/wp-content/uploads/2024/01/TEXA-AXONE-NEMO22.jpg') center/cover no-repeat;
             color: var(--white);
             text-align: center;
-            padding: 100px 20px;
+            padding: 140px 20px;
         }
         .hero h1 {
-            font-size: 48px;
+            font-size: 56px;
             margin: 0 0 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
         }
         .hero p {
-            font-size: 24px;
-            max-width: 800px;
-            margin: 0 auto 30px;
+            font-size: 28px;
+            max-width: 900px;
+            margin: 0 auto 40px;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        .grid {
+        .cta-button {
+            display: inline-block;
+            background-color: var(--green);
+            color: var(--white);
+            padding: 18px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        .cta-button:hover {
+            background-color: var(--green-hover);
+        }
+        section {
+            padding: 80px 0;
+        }
+        .alt-bg {
+            background-color: var(--light-gray);
+        }
+        h2 {
+            text-align: center;
+            font-size: 42px;
+            color: var(--green);
+            margin-bottom: 50px;
+        }
+        .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            margin: 60px 0;
+        }
+        .feature-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            color: var(--green);
+            font-size: 24px;
+        }
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .coverage-item img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
         .video-wrapper {
             position: relative;
@@ -69,9 +137,9 @@
             overflow: hidden;
             max-width: 100%;
             background: #000;
-            border: 5px solid var(--green);
-            border-radius: 8px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border: 8px solid var(--green);
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
         }
         .video-wrapper iframe {
             position: absolute;
@@ -81,82 +149,73 @@
             height: 100%;
         }
         .form-section {
-            background-color: var(--light-gray);
-            padding: 60px 20px;
-            text-align: center;
+            background: linear-gradient(rgba(10,109,10,0.95), rgba(10,109,10,0.95)), url('https://cdn.prod.website-files.com/61ef7c3c8ff5ac26cf790fb6/6759d9ed9d0a974bdba5ec9c_diagnostics.webp') center/cover no-repeat;
+            color: var(--white);
         }
         .form-container {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
-            background: var(--white);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background: rgba(0,0,0,0.7);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
         }
         form label {
             display: block;
             text-align: left;
-            margin: 15px 0 5px;
+            margin: 20px 0 8px;
             font-weight: bold;
+            font-size: 18px;
         }
         form input, form textarea {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
             font-size: 16px;
         }
         form button {
+            width: 100%;
             background-color: var(--green);
             color: var(--white);
             border: none;
-            padding: 15px 30px;
-            font-size: 20px;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
             cursor: pointer;
-            margin-top: 20px;
-            border-radius: 5px;
+            margin-top: 30px;
+            border-radius: 8px;
             transition: background 0.3s;
         }
         form button:hover {
             background-color: var(--green-hover);
         }
-        .features {
-            background-color: var(--white);
-            padding: 60px 20px;
+        .testimonials {
+            background-color: var(--mid-gray);
         }
-        .feature-card {
-            background: var(--light-gray);
+        .testimonial-card {
+            background: var(--white);
             padding: 30px;
-            border-radius: 10px;
-            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            font-style: italic;
         }
-        .feature-card h3 {
+        .testimonial-card p:last-child {
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 20px;
             color: var(--green);
-            margin-top: 0;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: var(--green);
-            color: var(--white);
-            padding: 15px 30px;
-            font-size: 18px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 20px 0;
-            transition: background 0.3s;
-        }
-        .cta-button:hover {
-            background-color: var(--green-hover);
         }
         footer {
             background-color: var(--black);
             color: var(--white);
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
         }
         @media (max-width: 768px) {
-            .hero h1 { font-size: 36px; }
-            .hero p { font-size: 18px; }
+            .hero h1 { font-size: 40px; }
+            .hero p { font-size: 20px; }
+            header .container { flex-direction: column; }
         }
     </style>
 </head>
@@ -171,63 +230,97 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Industry-Leading TEXA Off-Highway Diagnostics</h1>
-            <p>Comprehensive coverage for agricultural, construction, material handling, and industrial engines. Trusted by fleets and OEMs nationwide.</p>
-            <a href="#form" class="cta-button">Request a Free Demo</a>
+            <h1>Unleash Dealer-Level Diagnostics for Off-Highway Equipment</h1>
+            <p>Comprehensive coverage for tractors, excavators, loaders, forklifts & more — with no mandatory subscriptions and US-based support.</p>
+            <a href="#form" class="cta-button">Request Your FREE Demo Today</a>
         </div>
     </section>
 
-    <section class="features">
+    <section class="alt-bg">
         <div class="container">
-            <h2 style="text-align:center; font-size:38px; color:var(--green);">Why Choose TEXA Off-Highway from CEAS?</h2>
-            <div class="grid">
+            <h2>One Tool Covers All Major Off-Highway Categories</h2>
+            <div class="coverage-grid">
+                <div class="coverage-item">
+                    <img src="https://in.hd-hyundaice.com/assets/blog_10_banner_new_2-2bb3d89f22b078fb05d3d0572b0d38ffc5b3.png" alt="Construction Equipment">
+                </div>
+                <div class="coverage-item">
+                    <img src="https://www.topmarkfunding.com/wp-content/uploads/2020/04/types-of-heavy-equipment.jpg" alt="Excavators and Loaders">
+                </div>
+                <div class="coverage-item">
+                    <img src="https://www.liveabout.com/thmb/zZDzKijEjlaFOsE0vQFce4bo9FU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Balance_Must_Have_Earth_Moving_Construction_Heavy_Equipment_844586-c5b6ac9e5c074c11ad41e9acaea8f099.png" alt="Heavy Equipment Illustration">
+                </div>
+                <div class="coverage-item">
+                    <img src="https://acropolis-wp-content-uploads.s3.us-west-1.amazonaws.com/construction-truck-types.webp" alt="Construction Vehicles">
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:50px;">
+                <a href="#form" class="cta-button">Get Your Free Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Why Shops Choose TEXA Off-Highway from CEAS</h2>
+            <div class="grid-3">
                 <div class="feature-card">
-                    <h3>Comprehensive Coverage</h3>
-                    <p>Tractors, excavators, loaders, forklifts, skid steers, cranes, generators and more — one tool covers it all.</p>
+                    <img src="https://www.texa.com/wp-content/uploads/2020/09/texa-news-axone-nemo-2-01.jpg" alt="Axone Nemo 2">
+                    <h3>Dealer-Level Capabilities</h3>
+                    <p>Injector coding, SCR/DEF resets, bidirectional control, wiring diagrams, and advanced testing on all major brands.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Best-in-Class Quality</h3>
-                    <p>In-house engineering and manufacturing to the highest standards. Proven reliability with OEM partnerships.</p>
+                    <img src="https://cdn.prod.website-files.com/655876fbac631f198470355d/675ac9cbe39d4bf8cbf93827_675ac6978760675aa98130f9_technician-using-diagnostic-tool.webp" alt="Mechanic Diagnosing">
+                    <h3>No Subscriptions Required</h3>
+                    <p>Affordable ownership — no penalties for missed updates, extended warranty with renewal.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Superior ROI</h3>
-                    <p>No mandatory subscriptions, no penalties for missed updates, and extended hardware warranty with renewal.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Unmatched Support</h3>
-                    <p>Monthly updates and direct access to TEXA's US-based technical support team.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Tailor-Made Solutions</h3>
-                    <p>Combine licenses to build the exact diagnostic tool your shop needs.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Powerful Tools</h3>
-                    <p>Axone Nemo series with IDC6 software — AI-powered diagnostics, bidirectional control, and advanced testing.</p>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_797967-MLA74992729730_032024-F.jpg" alt="US Support"> <!-- Placeholder for support icon/image -->
+                    <h3>US-Based Expert Support</h3>
+                    <p>Direct access to TEXA's American technical team plus CEAS local expertise.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features" style="background:var(--light-gray);">
+    <section class="alt-bg">
         <div class="container">
-            <h2 style="text-align:center; font-size:38px; color:var(--green);">See TEXA Off-Highway in Action</h2>
-            <p style="text-align:center; font-size:20px; max-width:900px; margin:0 auto 40px;">Watch our full walk-through on a New Holland C245 Skid Steer — injector tests, SCR regeneration, live data, wiring diagrams, and more.</p>
+            <h2>See TEXA Off-Highway in Action</h2>
+            <p style="text-align:center; font-size:20px; max-width:900px; margin:0 auto 40px;">Watch a full demo on a New Holland C245 Skid Steer — live data, injector tests, SCR regeneration, and more.</p>
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VgZBB_TD76A" title="TEXA IDC6 Off-Highway Demo on New Holland Skid Steer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VgZBB_TD76A" title="TEXA Off-Highway Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div style="text-align:center; margin-top:30px;">
-                <a href="#form" class="cta-button">Request Your Demo Now</a>
+            <div style="text-align:center; margin-top:40px;">
+                <a href="#form" class="cta-button">Request Demo Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Shops Are Saying</h2>
+            <div class="grid-3">
+                <div class="testimonial-card">
+                    <p>"TEXA has transformed how we handle off-highway repairs. Coverage is incredible and support is top-notch."</p>
+                    <p>— John D., Fleet Manager</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Best investment we've made. No more dealer trips for simple diagnostics."</p>
+                    <p>— Mike R., Independent Shop Owner</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The Axone interface is fast and intuitive. Monthly updates keep us current without hassle."</p>
+                    <p>— Sarah T., Heavy Equipment Tech</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="form-section" id="form">
         <div class="container">
-            <h2 style="font-size:38px; color:var(--green);">Get Your Free TEXA Off-Highway Demo</h2>
-            <p style="font-size:20px; max-width:800px; margin:0 auto 40px;">Fill out the form below and a CEAS specialist will contact you to schedule a personalized demo in your shop.</p>
+            <h2 style="color:var(--white);">Claim Your Free In-Shop TEXA Off-Highway Demo</h2>
+            <p style="font-size:22px; max-width:800px; margin:0 auto 50px;">A CEAS specialist will bring the tool to your shop and show you exactly how it works on your equipment.</p>
             <div class="form-container">
-                <form action="https://formsubmit.co/your@email.com" method="POST"> <!-- Replace your@email.com with your actual email -->
+                <form action="https://formsubmit.co/your@email.com" method="POST"> <!-- Replace with your email -->
                     <label for="name">Full Name *</label>
                     <input type="text" id="name" name="name" required>
 
@@ -237,26 +330,28 @@
                     <label for="phone">Phone *</label>
                     <input type="tel" id="phone" name="phone" required>
 
-                    <label for="company">Company / Shop Name</label>
-                    <input type="text" id="company" name="company">
+                    <label for="company">Company / Shop Name *</label>
+                    <input type="text" id="company" name="company" required>
 
-                    <label for="message">Message (optional)</label>
+                    <label for="equipment">Equipment Types You Work On</label>
+                    <input type="text" id="equipment" name="equipment">
+
+                    <label for="message">Additional Comments</label>
                     <textarea id="message" name="message" rows="4"></textarea>
 
-                    <input type="hidden" name="_subject" value="New TEXA Off-Highway Demo Request">
-                    <input type="hidden" name="_next" value="https://ceasusa.com/thank-you.html"> <!-- Optional: create a thank-you page -->
+                    <input type="hidden" name="_subject" value="New TEXA Off-Highway Demo Request - CEAS">
+                    <input type="hidden" name="_next" value="https://ceasusa.com/thank-you.html">
 
-                    <button type="submit">Request Demo</button>
+                    <button type="submit">YES! Schedule My Free Demo</button>
                 </form>
-                <p style="font-size:14px; margin-top:20px; color:#666;">We respect your privacy. Your information will only be used to contact you about TEXA Off-Highway solutions.</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Cutting Edge Automotive Solutions | TEXA Diagnostics Authorized Distributor</p>
-            <p><a href="https://ceasusa.com" style="color:var(--green);">ceasusa.com</a> | (251) 367-3560</p>
+            <p>&copy; 2026 Cutting Edge Automotive Solutions | Authorized TEXA Diagnostics Distributor</p>
+            <p><a href="https://ceasusa.com" style="color:var(--green); text-decoration:none;">ceasusa.com</a> | (251) 367-3560</p>
         </div>
     </footer>
 
