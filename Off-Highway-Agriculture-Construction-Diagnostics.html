@@ -3,74 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEXA Off-Highway Diagnostics | Free Dealer-Level Demo from CEAS</title>
-    <meta name="description" content="Get the powerful TEXA Off-Highway diagnostic tablet for agricultural, construction & industrial equipment. No subscriptions. US support. Request your FREE in-shop demo today.">
+    <title>TEXA Off-Highway Diagnostics | CEAS</title>
+    <meta name="description" content="Dealer-level diagnostics for agricultural, construction & industrial equipment. No subscriptions. Free in-shop demo.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;family=Roboto+Condensed:wght@700&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
         body { font-family: 'Inter', system_ui, sans-serif; }
-        .heading-font { font-family: 'Roboto Condensed', sans-serif; }
+        .heading-font { font-family: 'Cabin', sans-serif; }
+        .top-bar { background: linear-gradient(#0A6D0A, #085808); }
         .hero-bg { background: linear-gradient(135deg, #000000 0%, #0A6D0A 100%); }
-        .green-accent { color: #0A6D0A; }
+        .accent-green { color: #0A6D0A; }
+        .yellow-box { background: #F9B82D; }
         .form-input { transition: all 0.2s; }
         .form-input:focus { box-shadow: 0 0 0 4px rgba(10, 109, 10, 0.3); }
-        .section-header { font-size: 2.75rem; line-height: 1.1; }
     </style>
 </head>
 <body class="bg-white text-gray-900">
 
-    <!-- HEADER -->
-    <header class="bg-black text-white sticky top-0 z-50 border-b border-gray-800">
+    <!-- TOP BAR - Exact Diesel style (yellow → green) -->
+    <header class="top-bar text-white sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="text-3xl font-black heading-font tracking-tighter green-accent">CEAS</div>
-                <div class="text-sm leading-tight">
-                    CUTTING EDGE<br>AUTOMOTIVE SOLUTIONS
-                </div>
+            <div class="flex items-center gap-4">
+                <div class="text-4xl font-black heading-font tracking-tighter">CEAS</div>
+                <div class="text-lg font-medium">CUTTING EDGE<br>AUTOMOTIVE SOLUTIONS</div>
             </div>
             <div class="flex items-center gap-8">
-                <a href="tel:2513673560" class="flex items-center gap-2 text-lg font-semibold hover:text-green-400 transition">
+                <a href="tel:2513673560" class="flex items-center gap-3 text-xl font-semibold hover:text-white/80">
                     <i class="fas fa-phone"></i> (251) 367-3560
                 </a>
-                <a href="#demo-form" class="bg-white text-black px-6 py-3 rounded font-bold hover:bg-gray-100 transition">REQUEST DEMO</a>
+                <div class="text-right">
+                    <div class="text-sm">Give us a call</div>
+                    <div class="font-bold text-2xl accent-green">REQUEST DEMO</div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero-bg text-white">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 py-16 md:py-24">
-            <div class="space-y-8">
-                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-5 py-2 rounded-full text-sm font-medium">
-                    <span class="text-green-400">NEW</span>
-                    <span>OFF-HIGHWAY EDITION</span>
-                </div>
+    <!-- HERO - Exact split layout: left text + form | right large product image -->
+    <section class="hero-bg text-white py-16">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center px-6">
+            
+            <!-- LEFT: Headline + Benefits + Form -->
+            <div class="md:col-span-5 space-y-8">
                 <h1 class="heading-font text-6xl md:text-7xl leading-none font-black tracking-tighter">
-                    DEALER-LEVEL DIAGNOSTICS<br>FOR OFF-HIGHWAY EQUIPMENT
+                    UNLEASH DEALER-LEVEL<br>DIAGNOSTICS FOR<br>OFF-HIGHWAY EQUIPMENT
                 </h1>
-                <p class="text-2xl text-gray-200">TEXA Axone Nemo + IDC6 Off-Highway. Tractors, excavators, loaders, forklifts, cranes &amp; more.</p>
-                <ul class="space-y-4 text-lg">
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i> Full bidirectional control &amp; coding</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i> No mandatory subscriptions</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i> Monthly updates included</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i> US-based TEXA + CEAS support</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-400 mt-1"></i> Bring the tool to YOUR shop</li>
-                </ul>
-                <div class="flex items-center gap-8 text-sm opacity-80">
-                    <div>30-DAY MONEY BACK</div>
-                    <div>3-YEAR WARRANTY</div>
-                    <div>100% SATISFACTION</div>
+                <div class="space-y-6 text-xl">
+                    <div class="flex gap-4">
+                        <i class="fas fa-check text-green-400 text-3xl flex-shrink-0 mt-1"></i>
+                        <div>Full bidirectional control &amp; coding</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-check text-green-400 text-3xl flex-shrink-0 mt-1"></i>
+                        <div>No mandatory subscriptions</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-check text-green-400 text-3xl flex-shrink-0 mt-1"></i>
+                        <div>US-based TEXA + CEAS support</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-check text-green-400 text-3xl flex-shrink-0 mt-1"></i>
+                        <div>Free in-shop demo on YOUR machines</div>
+                    </div>
                 </div>
-                <div class="text-green-400 text-xl font-semibold flex items-center gap-3">
-                    <i class="fas fa-arrow-down"></i> SCROLL FOR YOUR FREE DEMO
+
+                <!-- FORM - Exact Diesel placement & styling -->
+                <div id="demo-form" class="bg-white text-black p-8 rounded-2xl shadow-2xl">
+                    <form action="https://formsubmit.co/your@email.com" method="POST" class="space-y-6">
+                        <input type="text" name="name" placeholder="Full Name *" required class="form-input w-full border border-gray-300 rounded-xl px-6 py-4 text-lg">
+                        <input type="email" name="email" placeholder="Business Email *" required class="form-input w-full border border-gray-300 rounded-xl px-6 py-4 text-lg">
+                        <input type="tel" name="phone" placeholder="Phone Number *" required class="form-input w-full border border-gray-300 rounded-xl px-6 py-4 text-lg">
+                        <input type="text" name="company" placeholder="Company / Shop Name" class="form-input w-full border border-gray-300 rounded-xl px-6 py-4 text-lg">
+                        <input type="hidden" name="_subject" value="NEW TEXA OFF-HIGHWAY DEMO REQUEST">
+                        <input type="hidden" name="_next" value="https://ceasusa.com/thank-you.html">
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 transition text-white font-black heading-font text-2xl py-6 rounded-2xl">
+                            REQUEST FREE DEMO NOW
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="relative">
-                <img src="https://www.texausa.com/wp-content/uploads/2023/10/Axone-Nemo-2-Off-Highway.jpg" alt="TEXA Axone Nemo Off-Highway Diagnostic Tablet" class="w-full rounded-2xl shadow-2xl">
-                <div class="absolute -top-4 -right-4 bg-white text-black px-6 py-3 rounded-xl shadow-xl text-center">
-                    <div class="text-4xl font-black heading-font">FREE</div>
-                    <div class="text-sm uppercase tracking-widest">In-Shop Demo</div>
+
+            <!-- RIGHT: Large product image -->
+            <div class="md:col-span-7 relative">
+                <img src="https://www.texausa.com/wp-content/uploads/2023/10/Axone-Nemo-2-Off-Highway.jpg" alt="TEXA Axone Nemo Off-Highway" class="w-full rounded-3xl shadow-2xl">
+                <div class="absolute -top-6 -right-6 bg-white text-black px-8 py-6 rounded-2xl shadow-xl text-center">
+                    <div class="text-5xl font-black heading-font accent-green">FREE</div>
+                    <div class="uppercase tracking-widest font-bold">In-Shop Demo</div>
                 </div>
             </div>
         </div>
@@ -78,45 +97,35 @@
 
     <!-- VIDEO SECTION -->
     <section class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="heading-font text-5xl font-black">See It In Action on a New Holland Skid Steer</h2>
-            </div>
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-black mb-8">Diagnostics Done Right With TEXA Off-Highway</h2>
             <div class="aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/VgZBB_TD76A" title="TEXA Off-Highway Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/VgZBB_TD76A" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <!-- NEW SECTION 1: Affordable. Powerful. Built for Everything. -->
-    <section class="py-20 bg-white">
+    <!-- AFFORDABLE. POWERFUL. BUILT FOR EVERYTHING. -->
+    <section class="py-20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-12">
-                <div class="h-2 w-10 bg-yellow-400"></div>
-                <h2 class="heading-font text-5xl font-black tracking-tighter">Affordable. Powerful. Built for Everything.</h2>
+                <div class="h-2 w-12 bg-yellow-400"></div>
+                <h2 class="heading-font text-5xl font-black">Affordable. Powerful. Built for Everything.</h2>
             </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Left: Full kit image -->
-                <div>
-                    <img src="https://www.ceasusa.com/cdn/shop/files/TEXA-Off-Highway-Kit.jpg" alt="TEXA Axone Nemo Off-Highway Full Kit" class="w-full rounded-2xl shadow-xl">
-                </div>
-                
-                <!-- Right: Advanced Diagnostic Capabilities -->
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <img src="https://via.placeholder.com/800x600/0A6D0A/FFFFFF?text=TEXA+Off-Highway+Full+Kit" alt="Full Kit" class="rounded-3xl shadow-2xl">
                 <div class="space-y-12">
                     <div>
-                        <h3 class="heading-font text-3xl font-bold mb-4">Advanced Diagnostic Capabilities</h3>
-                        <p class="text-gray-700 leading-relaxed">Perform all dealer-level commands like DPF regens, EGR resets, SCR/DEF diagnostics, injector coding, and bidirectional controls on tractors, excavators, loaders, forklifts, cranes, and more. Real-time data, live readings, and enhanced graphical representations included.</p>
+                        <h3 class="heading-font text-4xl font-bold mb-4">Advanced Diagnostic Capabilities</h3>
+                        <p class="text-lg leading-relaxed">Dealer-level commands on tractors, excavators, loaders, forklifts, cranes &amp; more. DPF/SCR regens, injector coding, bidirectional control, live data, and wiring diagrams.</p>
                     </div>
-                    
-                    <!-- Rugged Hardware subsection -->
-                    <div class="grid grid-cols-12 gap-8 items-center">
+                    <div class="grid grid-cols-12 gap-8">
                         <div class="col-span-5">
-                            <img src="https://www.texa.com/wp-content/uploads/2024/03/Axone-Nemo-Plus-Rugged.jpg" alt="TEXA Axone Nemo Rugged Tablet" class="w-full rounded-2xl shadow-xl">
+                            <img src="https://via.placeholder.com/400x400/0A6D0A/FFFFFF?text=Rugged+Tablet" alt="Rugged Tablet" class="rounded-3xl shadow-xl">
                         </div>
                         <div class="col-span-7">
-                            <h3 class="heading-font text-3xl font-bold mb-4">Rugged Hardware for Tough Jobs</h3>
-                            <p class="text-gray-700 leading-relaxed">Built with a large, bright screen for easy readability even in direct sunlight. Magnesium-alloy rugged design handles drops, dust, and grime. Includes integrated kickstand and heavy-duty carrying case.</p>
+                            <h3 class="heading-font text-4xl font-bold mb-4">Rugged Hardware for Tough Jobs</h3>
+                            <p class="text-lg leading-relaxed">Bright sunlight-readable screen. Drop-proof magnesium case. Kickstand + heavy-duty carrying case included.</p>
                         </div>
                     </div>
                 </div>
@@ -124,101 +133,66 @@
         </div>
     </section>
 
-    <!-- NEW SECTION 2: Unlimited Training & Technical Support -->
-    <section class="py-20 bg-gray-50">
+    <!-- TRAINING + SUPPORT (exact Diesel two-column layout) -->
+    <section class="py-20 bg-gray-100">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
-            
-            <!-- Training -->
             <div>
-                <img src="https://www.texausa.com/wp-content/uploads/2024/01/TEXA-Training-Shop.jpg" alt="CEAS TEXA Training" class="w-full rounded-3xl shadow-2xl mb-8">
-                <h3 class="heading-font text-4xl font-black mb-6">Unlimited TEXA Updates &amp; Training</h3>
-                <p class="text-lg text-gray-700 mb-6">Your TEXA Off-Highway tool comes with lifetime access to monthly IDC6 software updates and CEAS/TEXA training resources:</p>
-                <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i> 40+ on-demand video courses 24/7</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Beginner to advanced diagnostic training</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Live webinars with TEXA experts</li>
-                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-600 mt-1"></i> Learn at your own pace, anytime</li>
+                <img src="https://via.placeholder.com/600x400/0A6D0A/FFFFFF?text=Unlimited+Training" class="rounded-3xl shadow-2xl mb-8">
+                <h3 class="heading-font text-4xl font-black mb-6">Unlimited TEXA Training &amp; Updates</h3>
+                <ul class="space-y-4 text-lg">
+                    <li>✅ 40+ on-demand courses 24/7</li>
+                    <li>✅ Beginner to advanced diagnostics</li>
+                    <li>✅ Monthly software updates included</li>
                 </ul>
             </div>
-            
-            <!-- Technical Support -->
             <div>
-                <img src="https://www.texausa.com/wp-content/uploads/2024/01/TEXA-Tech-Support.jpg" alt="CEAS TEXA Technical Support" class="w-full rounded-3xl shadow-2xl mb-8">
+                <img src="https://via.placeholder.com/600x400/0A6D0A/FFFFFF?text=US+Support" class="rounded-3xl shadow-2xl mb-8">
                 <h3 class="heading-font text-4xl font-black mb-6">US-Based Technical Support</h3>
-                <p class="text-lg text-gray-700">Our combined CEAS + TEXA team of US-based master technicians is here for you — from simple questions to advanced diagnostic roadblocks. Solve problems faster with direct expert guidance.</p>
-                <div class="mt-10 inline-block bg-green-600 text-white px-10 py-5 rounded-2xl font-bold text-xl heading-font hover:bg-green-700 transition">
-                    FREE LIFETIME SUPPORT INCLUDED
-                </div>
+                <p class="text-lg">CEAS + TEXA master technicians ready to help with any issue — simple or advanced.</p>
             </div>
         </div>
     </section>
 
-    <!-- NEW SECTION 3: Customers Do More with CEAS + TEXA -->
+    <!-- CUSTOMERS DO MORE - Exact 3 yellow testimonial boxes -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex items-center gap-4 mb-12">
-                <div class="h-2 w-10 bg-yellow-400"></div>
-                <h2 class="heading-font text-5xl font-black tracking-tighter">Customers Do More with CEAS + TEXA</h2>
+                <div class="h-2 w-12 bg-yellow-400"></div>
+                <h2 class="heading-font text-5xl font-black">Customers Do More with CEAS + TEXA</h2>
             </div>
-            
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-yellow-400 p-8 rounded-3xl">
-                    <p class="text-xl italic leading-relaxed">"This TEXA Off-Highway setup is 110% worth every penny. Far exceeded my expectations. Fast injector coding and SCR regens on our John Deere fleet. Excellent product."</p>
+                <div class="yellow-box p-8 rounded-3xl">
+                    <p class="italic text-xl">"This TEXA Off-Highway setup is 110% worth every penny. Fast injector coding on our John Deere fleet."</p>
                     <div class="mt-8 font-bold">— Andrew King, Fleet Manager</div>
                 </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="bg-yellow-400 p-8 rounded-3xl">
-                    <p class="text-xl italic leading-relaxed">"Absolutely love it. Moved from dealer trips to in-house diagnostics on excavators and loaders. The support is unmatched."</p>
+                <div class="yellow-box p-8 rounded-3xl">
+                    <p class="italic text-xl">"Absolutely love it. No more dealer trips for excavators and loaders."</p>
                     <div class="mt-8 font-bold">— Christopher Larrabee, Shop Owner</div>
                 </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="bg-yellow-400 p-8 rounded-3xl">
-                    <p class="text-xl italic leading-relaxed">"Borrowed one from a buddy and it changed everything. Wiring diagrams, live data, everything I need right now. Thanks CEAS!"</p>
+                <div class="yellow-box p-8 rounded-3xl">
+                    <p class="italic text-xl">"Changed everything. Wiring diagrams and live data right when I need it. Thanks CEAS!"</p>
                     <div class="mt-8 font-bold">— Mikki Vansickle, Heavy Equipment Tech</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LEAD FORM -->
-    <section id="demo-form" class="py-24 bg-black text-white">
-        <div class="max-w-2xl mx-auto px-6">
-            <div class="bg-gradient-to-br from-gray-900 to-black border border-green-600 rounded-3xl p-12 shadow-2xl">
-                <div class="text-center mb-10">
-                    <div class="inline-block bg-green-600 text-white text-sm font-bold px-6 py-2 rounded-full mb-4">LIMITED SPOTS THIS WEEK</div>
-                    <h2 class="heading-font text-5xl font-black">Claim Your FREE TEXA Off-Highway Demo</h2>
-                    <p class="text-xl text-gray-400 mt-4">A CEAS specialist will bring the full system to your shop.</p>
-                </div>
-
-                <form action="https://formsubmit.co/your@email.com" method="POST" class="space-y-6">
-                    <input type="text" name="name" placeholder="Full Name *" required class="form-input w-full bg-white/10 border border-white/30 rounded-2xl px-8 py-5 text-lg focus:outline-none">
-                    <input type="email" name="email" placeholder="Business Email *" required class="form-input w-full bg-white/10 border border-white/30 rounded-2xl px-8 py-5 text-lg focus:outline-none">
-                    <input type="tel" name="phone" placeholder="Phone Number *" required class="form-input w-full bg-white/10 border border-white/30 rounded-2xl px-8 py-5 text-lg focus:outline-none">
-                    <input type="text" name="company" placeholder="Company / Shop Name" class="form-input w-full bg-white/10 border border-white/30 rounded-2xl px-8 py-5 text-lg focus:outline-none">
-                    
-                    <input type="hidden" name="_subject" value="NEW TEXA OFF-HIGHWAY DEMO REQUEST - CEAS">
-                    <input type="hidden" name="_next" value="https://ceasusa.com/thank-you.html">
-
-                    <button type="submit" class="w-full bg-green-600 hover:bg-green-500 transition text-black font-black heading-font text-2xl py-8 rounded-2xl mt-8">
-                        YES — SCHEDULE MY FREE DEMO NOW
-                    </button>
-                </form>
-                <p class="text-center text-xs text-gray-400 mt-6">Your info is safe. We hate spam too.</p>
-            </div>
+    <!-- FINAL CTA SECTION -->
+    <section class="py-24 bg-black text-white">
+        <div class="max-w-3xl mx-auto text-center px-6">
+            <h2 class="heading-font text-5xl font-black mb-6">Claim Your Free TEXA Off-Highway Demo</h2>
+            <p class="text-2xl mb-12">A CEAS specialist will bring the full system to your shop.</p>
+            <a href="#demo-form" class="inline-block bg-green-600 hover:bg-green-700 text-white font-black heading-font text-3xl px-16 py-8 rounded-3xl transition">
+                YES — SCHEDULE MY FREE DEMO NOW
+            </a>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-black text-white py-12 border-t border-gray-800">
+    <footer class="bg-black text-white py-12">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="flex justify-center items-center gap-3 mb-6">
-                <div class="text-4xl font-black heading-font green-accent">CEAS</div>
-            </div>
-            <p class="text-sm opacity-60">© 2026 Cutting Edge Automotive Solutions • Authorized TEXA Distributor</p>
-            <p class="text-sm opacity-60 mt-2">(251) 367-3560 • <a href="https://ceasusa.com" class="hover:text-green-400">ceasusa.com</a></p>
+            <p class="text-sm opacity-70">© 2026 Cutting Edge Automotive Solutions • Authorized TEXA Distributor</p>
+            <p class="mt-2">(251) 367-3560 • <a href="https://ceasusa.com" class="hover:text-green-400">ceasusa.com</a></p>
         </div>
     </footer>
 
